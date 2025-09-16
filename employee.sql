@@ -1,7 +1,6 @@
--- Active: 1757966511733@@127.0.0.1@3306
--- Membuat Tabel employee
-
 DROP TABLE IF EXISTS employee;
+
+-- Membuat Tabel employee
 
 CREATE TABLE employee (
     Name VARCHAR(50),
@@ -105,7 +104,14 @@ WHERE
         OR ReleaseDate IS NULL
     );
 
--- Menampilkan nama dan tahun pengalaman dari karyawan dengan posisi Engineer yang memiliki pengalaman kurang dari atau sama dengan 3 tahun
+-- Menampilkan 3 karyawan dengan pengalaman kerja tertinggi
+SELECT Name, Year_of_Experience
+FROM employee
+ORDER BY Year_of_Experience DESC
+LIMIT 3;
+
+/* Menampilkan nama dan tahun pengalaman dari karyawan dengan posisi Engineer 
+yang memiliki pengalaman kurang dari atau sama dengan 3 tahun */
 
 SELECT Name, Year_of_Experience
 FROM employee
