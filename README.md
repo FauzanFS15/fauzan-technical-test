@@ -18,7 +18,7 @@ To run the project, please ensure that the following dependencies are installed 
 3.	Dependencies (npm install)
 4.	Postman (for testing APIs).
 5.	Linux based environment for cron jobs.
-6.	SQLite (or another relational database management system)
+6.	SQLite (or another relational database management system).
  
 Point 1:  Backend Development
 
